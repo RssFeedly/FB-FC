@@ -1,0 +1,32 @@
+name: Actualizar RSS Facebook
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # Se ejecuta cada 6 horas
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Instalar dependencias
+        run: |
+          pip install feedgen requests
+
+      - name: Ejecutar script de generación
+        run: python update_feed.py
+
+      - name: Guardar y subir cambios al repositorio
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add feed.xml
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Actualizar feed RSS automático" && git push)
