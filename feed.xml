@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>FCASanMarcosOficial - Facebook</title>
+    <link>https://www.facebook.com/FCASanMarcosOficial/</link>
+    <description>Feed automatizado para FCASanMarcosOficial</description>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>python-feedgen</generator>
+    <language>es</language>
+    <lastBuildDate>Tue, 25 Aug 2026 16:11:41 +0000</lastBuildDate>
+    <item>
+      <title>Visita la página oficial de FCA San Marcos en Facebook</title>
+      <link>https://www.facebook.com/FCASanMarcosOficial/</link>
+      <description>Este es un feed de respaldo automatizado. Debido a las restricciones de seguridad y anti-scraping de Meta, te recomendamos visitar directamente la página oficial para ver las últimas publicaciones.</description>
+      <guid isPermaLink="false">https://www.facebook.com/FCASanMarcosOficial/ 2026-08-25 16:11</guid>
+      <pubDate>Tue, 25 Aug 2026 16:11:41 +0000</pubDate>
+    </item>
+  </channel>
+</rss>
